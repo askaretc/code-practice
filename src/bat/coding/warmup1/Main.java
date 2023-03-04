@@ -38,4 +38,19 @@ public class Main {
     public boolean nearHundred(int n) {
         return ((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10));
     }
+
+
+    /**
+     * The value of n will be a valid index of a char in the original string
+     * (i.e. n will be in the range 0..str.length()-1 inclusive).
+     *
+     * @param str - string value
+     * @param n   - integer value
+     * @return a new string where the char at index n has been removed.
+     */
+    public String missingChar(String str, int n) {
+        String front = str.substring(0, n);
+        String back = str.substring(n + 1);
+        return front + back;
+    }
 }
