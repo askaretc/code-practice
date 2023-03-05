@@ -53,4 +53,16 @@ public class Main {
         String back = str.substring(n + 1);
         return front + back;
     }
+
+
+    /**
+     * The original string will be length 1 or more.
+     *
+     * @param str - string value
+     * @return a new string with the last char added at the front and back.
+     */
+    public String backAround(String str) {
+        String last = str.substring(str.length() - 1);
+        return last + str + last;
+    }
 }
