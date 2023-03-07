@@ -65,4 +65,19 @@ public class Main {
         String last = str.substring(str.length() - 1);
         return last + str + last;
     }
+
+
+    /**
+     * @param str - string value
+     * @return true if the string starts with "hi" and false otherwise.
+     */
+    public boolean startHi(String str) {
+        char[] c = str.toCharArray();
+        if (!(c.length < 2)) {
+            if (c[0] == 'h') {
+                return c[1] == 'i';
+            }
+        }
+        return false;
+    }
 }
