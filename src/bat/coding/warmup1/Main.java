@@ -95,4 +95,17 @@ public class Main {
         }
         return counter > 0;
     }
+
+
+    /**
+     * @param str - string value
+     * @return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+     */
+    public boolean mixStart(String str) {
+        char[] c = str.toCharArray();
+        if (!(c.length < 3)) {
+            return c[1] == 'i' && c[2] == 'x';
+        }
+        return false;
+    }
 }
