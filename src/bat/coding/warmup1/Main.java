@@ -108,4 +108,22 @@ public class Main {
         }
         return false;
     }
+
+
+    /**
+     * @param a - integer value
+     * @param b - integer value
+     * @return whichever value is nearest to the value 10, or return 0 in the event of a tie.
+     */
+    public int close10(int a, int b) {
+        int CONST = 10;
+        int diffA = Math.abs(a - CONST);
+        int diffB = Math.abs(b - CONST);
+        if (diffA < diffB) {
+            return a;
+        } else if (diffA > diffB) {
+            return b;
+        }
+        return 0;
+    }
 }
